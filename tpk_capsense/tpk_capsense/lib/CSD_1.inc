@@ -21,7 +21,7 @@ CSD_1_FEEDBACK_P1_4:                   equ 0x04
 CSD_1_FEEDBACK_P1_0:                   equ 0x08
 CSD_1_FEEDBACK_P3_0:                   equ 0x10
 
-CSD_1_CAPACITOR_PIN:                   equ 1
+CSD_1_CAPACITOR_PIN:                   equ 2
 CSD_1_CAPACITOR_P0_1:                  equ 1
 CSD_1_CAPACITOR_P0_3:                  equ 2
 
@@ -53,11 +53,11 @@ CSD_1_MAX_RESOLUTION:                  equ 16
 ; Constants for CSD_1 API's
 ;--------------------------------------------------
 
-CSD_1_ButtonCount:                     equ 1h
+CSD_1_ButtonCount:                     equ 2h
 CSD_1_SliderCount:                     equ 0h  + 0h
-CSD_1_TotalSensorCount:                equ 1h
+CSD_1_TotalSensorCount:                equ 2h
 
-CSD_1_BUTTONS_EXIST:                   equ 1h
+CSD_1_BUTTONS_EXIST:                   equ 2h
 CSD_1_SLIDERS_EXIST:                   equ 0h | 0h
 
 CSD_1_HYSTERESIS:                                equ ah

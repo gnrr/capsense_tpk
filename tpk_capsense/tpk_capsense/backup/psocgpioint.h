@@ -19,33 +19,57 @@ BYTE			CSD_1Capacitor_IntCtrl_0_ADDR;
 BYTE			CSD_1Capacitor_IntCtrl_1_ADDR;
 #pragma	ioport	CSD_1Capacitor_IntEn_ADDR:	0x1
 BYTE			CSD_1Capacitor_IntEn_ADDR;
-#define CSD_1Capacitor_MASK 0x2
+#define CSD_1Capacitor_MASK 0x8
 #pragma	ioport	CSD_1Capacitor_MUXBusCtrl_ADDR:	0x1d8
 BYTE			CSD_1Capacitor_MUXBusCtrl_ADDR;
 // CSD_1SW0 address and mask defines
-#pragma	ioport	CSD_1SW0_Data_ADDR:	0x8
+#pragma	ioport	CSD_1SW0_Data_ADDR:	0x4
 BYTE			CSD_1SW0_Data_ADDR;
-#pragma	ioport	CSD_1SW0_DriveMode_0_ADDR:	0x108
+#pragma	ioport	CSD_1SW0_DriveMode_0_ADDR:	0x104
 BYTE			CSD_1SW0_DriveMode_0_ADDR;
-#pragma	ioport	CSD_1SW0_DriveMode_1_ADDR:	0x109
+#pragma	ioport	CSD_1SW0_DriveMode_1_ADDR:	0x105
 BYTE			CSD_1SW0_DriveMode_1_ADDR;
-#pragma	ioport	CSD_1SW0_DriveMode_2_ADDR:	0xb
+#pragma	ioport	CSD_1SW0_DriveMode_2_ADDR:	0x7
 BYTE			CSD_1SW0_DriveMode_2_ADDR;
-#pragma	ioport	CSD_1SW0_GlobalSelect_ADDR:	0xa
+#pragma	ioport	CSD_1SW0_GlobalSelect_ADDR:	0x6
 BYTE			CSD_1SW0_GlobalSelect_ADDR;
-#pragma	ioport	CSD_1SW0_IntCtrl_0_ADDR:	0x10a
+#pragma	ioport	CSD_1SW0_IntCtrl_0_ADDR:	0x106
 BYTE			CSD_1SW0_IntCtrl_0_ADDR;
-#pragma	ioport	CSD_1SW0_IntCtrl_1_ADDR:	0x10b
+#pragma	ioport	CSD_1SW0_IntCtrl_1_ADDR:	0x107
 BYTE			CSD_1SW0_IntCtrl_1_ADDR;
-#pragma	ioport	CSD_1SW0_IntEn_ADDR:	0x9
+#pragma	ioport	CSD_1SW0_IntEn_ADDR:	0x5
 BYTE			CSD_1SW0_IntEn_ADDR;
-#define CSD_1SW0_MASK 0x1
-#pragma	ioport	CSD_1SW0_MUXBusCtrl_ADDR:	0x1da
+#define CSD_1SW0_MASK 0x10
+#pragma	ioport	CSD_1SW0_MUXBusCtrl_ADDR:	0x1d9
 BYTE			CSD_1SW0_MUXBusCtrl_ADDR;
 // CSD_1SW0 Shadow defines
 //   CSD_1SW0_DataShadow define
-extern BYTE Port_2_Data_SHADE;
-#define CSD_1SW0_DataShadow (*(unsigned char*)&Port_2_Data_SHADE)
+extern BYTE Port_1_Data_SHADE;
+#define CSD_1SW0_DataShadow (*(unsigned char*)&Port_1_Data_SHADE)
+// CSD_1SW1 address and mask defines
+#pragma	ioport	CSD_1SW1_Data_ADDR:	0x4
+BYTE			CSD_1SW1_Data_ADDR;
+#pragma	ioport	CSD_1SW1_DriveMode_0_ADDR:	0x104
+BYTE			CSD_1SW1_DriveMode_0_ADDR;
+#pragma	ioport	CSD_1SW1_DriveMode_1_ADDR:	0x105
+BYTE			CSD_1SW1_DriveMode_1_ADDR;
+#pragma	ioport	CSD_1SW1_DriveMode_2_ADDR:	0x7
+BYTE			CSD_1SW1_DriveMode_2_ADDR;
+#pragma	ioport	CSD_1SW1_GlobalSelect_ADDR:	0x6
+BYTE			CSD_1SW1_GlobalSelect_ADDR;
+#pragma	ioport	CSD_1SW1_IntCtrl_0_ADDR:	0x106
+BYTE			CSD_1SW1_IntCtrl_0_ADDR;
+#pragma	ioport	CSD_1SW1_IntCtrl_1_ADDR:	0x107
+BYTE			CSD_1SW1_IntCtrl_1_ADDR;
+#pragma	ioport	CSD_1SW1_IntEn_ADDR:	0x5
+BYTE			CSD_1SW1_IntEn_ADDR;
+#define CSD_1SW1_MASK 0x40
+#pragma	ioport	CSD_1SW1_MUXBusCtrl_ADDR:	0x1d9
+BYTE			CSD_1SW1_MUXBusCtrl_ADDR;
+// CSD_1SW1 Shadow defines
+//   CSD_1SW1_DataShadow define
+extern BYTE Port_1_Data_SHADE;
+#define CSD_1SW1_DataShadow (*(unsigned char*)&Port_1_Data_SHADE)
 // CSD_1Resistor address and mask defines
 #pragma	ioport	CSD_1Resistor_Data_ADDR:	0xc
 BYTE			CSD_1Resistor_Data_ADDR;

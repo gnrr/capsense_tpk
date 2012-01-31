@@ -19,18 +19,22 @@ void main(void)
 
 	while(1) {
 		BYTE val_p1 = out_p1;
-#if 0
-		if(CSD_1_bIsSensorActive(0)) {
+#if 1
+		CSD_1_ScanAllSensors();
+		CSD_1_UpdateAllBaselines();
+
+		if(CSD_1_bIsSensorActive(0) || CSD_1_bIsSensorActive(1)) {
 			val_p1 &= ~0x08;  // LED LO (touch sw indicator)
 		} else {
 			val_p1 |= 0x08;   // LED HI
 		}
-#endif
+#else
+		// LED test
 		volatile unsigned short i;
-		for(i=1000; i>0; i--);
+		for(i=10000; i>0; i--);	// wait
 
 		val_p1 ^= 0x08;   // LED
-
+#endif
 		out_p1 = val_p1;
 		PRT1DR = out_p1;
 	}

@@ -19,9 +19,9 @@
 ;=============================================================================
 ;
 
-CPU_CLOCK:				equ	7h	;CPU clock value
+CPU_CLOCK:				equ	0h	;CPU clock value
 CPU_CLOCK_MASK:			equ	7h	;CPU clock mask
-CPU_CLOCK_JUST:			equ	7h	;CPU clock value justified
+CPU_CLOCK_JUST:			equ	0h	;CPU clock value justified
 SLEEP_TIMER:			equ	0h	;Sleep Timer value
 SLEEP_TIMER_MASK:		equ	18h	;Sleep Timer mask
 SLEEP_TIMER_JUST:		equ	0h	;Sleep Timer value justified
@@ -53,15 +53,15 @@ WATCHDOG_ENABLE:		equ 0	;Watchdog Enable 1 = Enable
 CLOCK_DIV_VC1:			equ	fh	;VC1 clock divider
 CLOCK_DIV_VC1_MASK:		equ	f0h	;VC1 clock divider mask
 CLOCK_DIV_VC1_JUST:		equ	f0h	;VC1 clock divider justified
-CLOCK_DIV_VC2:			equ	fh	;VC2 clock divider
+CLOCK_DIV_VC2:			equ	0h	;VC2 clock divider
 CLOCK_DIV_VC2_MASK:		equ	fh	;VC2 clock divider mask
-CLOCK_DIV_VC2_JUST:		equ	fh	;VC2 clock divider justified
-CLOCK_INPUT_VC3:		equ	2h	;VC3 clock source
+CLOCK_DIV_VC2_JUST:		equ	0h	;VC2 clock divider justified
+CLOCK_INPUT_VC3:		equ	0h	;VC3 clock source
 CLOCK_INPUT_VC3_MASK:	equ	3h	;VC3 clock source mask
-CLOCK_INPUT_VC3_JUST:	equ	2h	;VC3 clock source justified
-CLOCK_DIV_VC3:			equ	ffh	;VC3 clock divider
+CLOCK_INPUT_VC3_JUST:	equ	0h	;VC3 clock source justified
+CLOCK_DIV_VC3:			equ	0h	;VC3 clock divider
 CLOCK_DIV_VC3_MASK:		equ	ffh	;VC3 clock divider mask
-CLOCK_DIV_VC3_JUST:		equ	ffh	;VC3 clock divider justified
+CLOCK_DIV_VC3_JUST:		equ	0h	;VC3 clock divider justified
 SYSCLK_SOURCE:				equ	(0h | 0h)	;SysClk Source setting
 SYSCLK_SOURCE_MASK:			equ	(4h | 2h)	;SysClk Source setting mask
 SYSCLK_SOURCE_JUST:			equ	(0h | 0h)	;SysClk Source setting justified

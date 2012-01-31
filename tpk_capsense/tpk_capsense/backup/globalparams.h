@@ -20,9 +20,9 @@
 //=============================================================================
 //
 
-#define CPU_CLOCK              0x7     //CPU clock value
+#define CPU_CLOCK              0x0     //CPU clock value
 #define CPU_CLOCK_MASK         0x7     //CPU clock mask
-#define CPU_CLOCK_JUST         0x7     //CPU clock value justified
+#define CPU_CLOCK_JUST         0x0     //CPU clock value justified
 #define SLEEP_TIMER            0x0     //Sleep Timer value
 #define SLEEP_TIMER_MASK       0x18    //Sleep Timer mask
 #define SLEEP_TIMER_JUST       0x0     //Sleep Timer value justified
@@ -35,15 +35,15 @@
 #define CLOCK_DIV_VC1          0xf     // VC1 clock divider 
 #define CLOCK_DIV_VC1_MASK     0xf0    // VC1 clock divider mask
 #define CLOCK_DIV_VC1_JUST     0xf0    // jVC1 clock divider ustified
-#define CLOCK_DIV_VC2          0xf     // VC2 clock divider 
+#define CLOCK_DIV_VC2          0x0     // VC2 clock divider 
 #define CLOCK_DIV_VC2_MASK     0xf     // VC2 clock divider mask
-#define CLOCK_DIV_VC2_JUST     0xf     // VC2 clock divider justified
-#define CLOCK_INPUT_VC3        0x2     // VC3 clock source
+#define CLOCK_DIV_VC2_JUST     0x0     // VC2 clock divider justified
+#define CLOCK_INPUT_VC3        0x0     // VC3 clock source
 #define CLOCK_INPUT_VC3_MASK   0x3     // VC3 clock source mask
-#define CLOCK_INPUT_VC3_JUST   0x2     // VC3 clock source justified
-#define CLOCK_DIV_VC3          0xff    // VC3 clock divider
+#define CLOCK_INPUT_VC3_JUST   0x0     // VC3 clock source justified
+#define CLOCK_DIV_VC3          0x0     // VC3 clock divider
 #define CLOCK_DIV_VC3_MASK     0xff    // VC3 clock divider mask
-#define CLOCK_DIV_VC3_JUST     0xff    // VC3 clock divider justified
+#define CLOCK_DIV_VC3_JUST     0x0     // VC3 clock divider justified
 #define SYSCLK_SOURCE          (0x0 | 0x0) // SysClk Source setting
 #define SYSCLK_SOURCE_MASK     (0x4 | 0x2) // SysClk Source setting mask
 #define SYSCLK_SOURCE_JUST     (0x0 | 0x0) // SysClk Source setting justified
