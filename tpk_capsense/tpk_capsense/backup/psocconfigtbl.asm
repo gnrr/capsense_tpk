@@ -103,9 +103,9 @@ LoadConfigTBL_tpk_capsense_Ordered:
 	mov	reg[03h], 00h		; Port_0_IntCtrl_1 register (PRT0IC1)
 	M8C_SetBank0
 	mov	reg[01h], 00h		; Port_0_IntEn register (PRT0IE)
-	mov	reg[04h], 08h		; Port_1_Data register (PRT1DR)
+	mov	reg[04h], 28h		; Port_1_Data register (PRT1DR)
 	M8C_SetBank1
-	mov	reg[04h], 08h		; Port_1_DriveMode_0 register (PRT1DM0)
+	mov	reg[04h], 28h		; Port_1_DriveMode_0 register (PRT1DM0)
 	mov	reg[05h], ffh		; Port_1_DriveMode_1 register (PRT1DM1)
 	M8C_SetBank0
 	mov	reg[07h], ffh		; Port_1_DriveMode_2 register (PRT1DM2)

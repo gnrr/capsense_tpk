@@ -58,7 +58,7 @@ _LoadConfigInit:
  LoadConfigInit:
     RAM_PROLOGUE RAM_USE_CLASS_4
     
-	mov		[Port_1_Data_SHADE], 8h
+	mov		[Port_1_Data_SHADE], 28h
 
 	lcall	LoadConfig_tpk_capsense
 	lcall	LoadConfigTBL_tpk_capsense_Ordered

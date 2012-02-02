@@ -23,7 +23,15 @@ void main(void)
 		CSD_1_ScanAllSensors();
 		CSD_1_UpdateAllBaselines();
 
-		if(CSD_1_bIsSensorActive(0) || CSD_1_bIsSensorActive(1)) {
+		// ctrl
+		if(CSD_1_bIsSensorActive(0)) {
+			val_p1 &= ~0x20;  // LED LO (touch sw indicator)
+		} else {
+			val_p1 |= 0x20;   // LED HI
+		}
+		
+		// shift
+		if(CSD_1_bIsSensorActive(1)) {
 			val_p1 &= ~0x08;  // LED LO (touch sw indicator)
 		} else {
 			val_p1 |= 0x08;   // LED HI
@@ -33,7 +41,7 @@ void main(void)
 		volatile unsigned short i;
 		for(i=10000; i>0; i--);	// wait
 
-		val_p1 ^= 0x08;   // LED
+		val_p1 ^= 0x28;   // LED
 #endif
 		out_p1 = val_p1;
 		PRT1DR = out_p1;
